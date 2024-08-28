@@ -9,10 +9,26 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">BDD</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="navbar-brand" href="/">BDD</a>
+        <div class="d-flex justify-content-end">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ms-3">
+              <a class="nav-link btn btn-outline-secondary" aria-current="page" href="/">Inicio</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link btn btn-outline-secondary" aria-current="page" href="/crear">Crear</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link btn btn-outline-secondary" aria-current="page" href="/consultar">Consultar</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link btn btn-outline-secondary" aria-current="page" href="/actualizar">Actualizar</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link btn btn-outline-secondary" aria-current="page" href="/borrar">Borrar</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -23,7 +39,7 @@
       <div class="card-body">
         <h5 class="card-title">Crear Usuario</h5>
         <p class="card-text">Apartado para crear un nuevo usuario</p>
-        <a href="#" class="btn btn-success">Crear</a>
+        <a href="/crear" class="btn btn-success">Crear</a>
       </div>
     </div>
 
@@ -31,7 +47,7 @@
       <div class="card-body">
         <h5 class="card-title">Consultar Datos</h5>
         <p class="card-text">Aqui puedes visualizar los datos de un usuario</p>
-        <a href="#" class="btn btn-primary">Consultar</a>
+        <a href="/consultar" class="btn btn-primary">Consultar</a>
       </div>
     </div>
 
@@ -39,7 +55,7 @@
       <div class="card-body">
         <h5 class="card-title">Actualizar Datos</h5>
         <p class="card-text">Aqui puedes actualizar la informacion de un usuario</p>
-        <a href="#" class="btn btn-warning">Actualizar</a>
+        <a href="/actualizar" class="btn btn-warning">Actualizar</a>
       </div>
     </div>
 
@@ -47,7 +63,7 @@
       <div class="card-body">
         <h5 class="card-title">Borrar Usuario</h5>
         <p class="card-text">Aqui puedes borrar a un usuario de la base de datos.</p>
-        <a href="#" class="btn btn-danger">Borrar</a>
+        <a href="/borrar" class="btn btn-danger">Borrar</a>
       </div>
     </div>
 
