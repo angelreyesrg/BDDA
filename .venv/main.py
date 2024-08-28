@@ -19,15 +19,21 @@ Base = declarative_base()
 def index(name=None):
     return render_template('index.html')
 
-@app.route("/register")
-def register(name=None):
-    return render_template('register.html')
+@app.route("/crear")
+def crear(name=None):
+    return render_template('crear.html')
 
-@app.route("/login")
-def login(name=None):
-    return render_template('login.html')
+@app.route("/consultar")
+def consultar(name=None):
+    return render_template('consultar.html')
 
+@app.route("/actualizar")
+def actualizar(name=None):
+    return render_template('actualizar.html')
 
+@app.route("/borrar")
+def borrar(name=None):
+    return render_template('borrar.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
