@@ -36,27 +36,28 @@
     <div class="container mt-5">
       <p class="h1">Crear Usuario</p>
     </div>
-
+    
     <div class="container mt-4">
-      <form class="col-10">
+      <form class="col-10" method="POST" action="{{ url_for('crear') }}">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Nombre</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <label for="exampleInputUser1" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="exampleInputUser1" name="nombre_usuario" aria-describedby="nameHelp" required>
+          <small id="nameHelp" class="form-text text-muted">Ingrese su nombre completo.</small>
         </div>
-
+    
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" name="correo_electronico" placeholder="example@gmail.com" aria-describedby="emailHelp" required>
         </div>
-
+    
         <div class="mb-4">
           <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <input type="password" class="form-control" id="exampleInputPassword1" name="contrasena" required>
         </div>
+    
         <button type="submit" class="btn btn-success">Crear</button>
       </form>
     </div>
-
 
 
 
