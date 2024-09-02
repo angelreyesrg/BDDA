@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 
 # URL de la base de datos
-DATABASE_URL = "postgresql://postgres:1234@localhost:5432/web"
+DATABASE_URL = "postgresql://postgres:1234@localhost:5432/postgres"
 
 # Crear un motor de conexión
 engine = create_engine(DATABASE_URL)
@@ -16,4 +16,3 @@ def check_connection():
 
 if __name__ == "__main__":
     check_connection()
-
