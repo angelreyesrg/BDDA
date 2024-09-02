@@ -9,7 +9,7 @@ from werkzeug.security import check_password_hash
 app = Flask(__name__)
 
 # Configuración de la base de datos
-DATABASE_URL = "postgresql://postgres:1234@localhost:5432/postgres"
+DATABASE_URL = "postgresql://postgres:1234@localhost:5432/web"
 app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
 
 # Establecer la clave secreta para la sesión
