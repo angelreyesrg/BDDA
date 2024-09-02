@@ -92,7 +92,7 @@ def iniciar(name=None):
         return render_template('iniciar.html')
 
 @app.route("/cerrar")
-def logout():
+def cerrar():
     try:
         if session['user_id']:
             session.pop('user_id', None)  # Eliminar el ID de usuario de la sesión
